@@ -5,251 +5,215 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RELAY-104.19.3.12-1899, server: 104.19.3.12, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chcar, ws-headers: {Host: v2fly.samrt.website}, udp: true}
-  - {name: CN-14.29.124.168-4678, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: github.com/mianfeifq |印度(youtube阿伟科技), server: in-02.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: in-02.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: CN 238 VMS, server: 120.241.236.216, port: 16214, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 793 VMS, server: 120.241.236.215, port: 16215, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UN 1317 VMS, server: 104.19.3.36, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chcar, ws-headers: {Host: v2fly.samrt.website}, udp: true}
-  - {name: US-38.121.43.65-0800, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CN 199 VMS, server: 120.241.236.215, port: 16245, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 198 VMS, server: 120.241.236.113, port: 16214, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 728 VMS, server: 43.142.87.128, port: 4816, type: vmess, uuid: 12bfc8c6-1b07-4f07-d3c3-f185e89e961c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/mianfeifq |🇺🇸美国_4, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 207 VMS, server: 120.241.236.218, port: 16246, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 440 VMS, server: 120.241.236.216, port: 16246, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 1886 VMS, server: best02.downloadmovie.cn, port: 65043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: best02.downloadmovie.cn}, udp: true}
-  - {name: CN 210 VMS, server: 120.241.236.113, port: 16215, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 28 SSS, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 183 VMS, server: 120.241.236.113, port: 16245, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 650 VMS, server: 120.241.236.215, port: 16214, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 179 VMS, server: 120.241.236.113, port: 16246, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _中国_VV科技_23, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: CN 31 SSS, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 203 VMS, server: 120.241.236.216, port: 16215, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/mianfeifq |🇺🇸_US_美国_13, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 29 SSS, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 143 SSS, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 新加坡 95, server: bai-piao-wang-zhe12.98848.xyz, port: 36736, type: vmess, uuid: 50a9c98e-8c48-4680-feff-a7ea34705ae9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ytryr6, ws-headers: {Host: bai-piao-wang-zhe12.98848.xyz}, udp: true}
-  - {name: CN 244 VMS, server: 116.129.254.192, port: 16245, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 1892 VMS, server: 116.129.254.177, port: 65048, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: 116.129.254.177}, udp: true}
-  - {name: 印度 50, server: in-01.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: in-01.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: CN-120.233.150.146-4771, server: best03.downloadmovie.cn, port: 65088, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: best03.downloadmovie.cn}, udp: true}
-  - {name: Việt Nam (7), server: 103.166.140.111, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: frontier-i18n.tiktokv.com}, udp: true}
-  - {name: CN 396 VMS, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: CN 35 VMS, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i2.iivvppnn.info}, udp: true}
-  - {name: CN 38 VMS, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-jp-1.iivvppnn.info}, udp: true}
-  - {name: _油管：全网最强白嫖 53, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: _油管：全网最强白嫖 42, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: CN-111.45.22.152-1191, server: cn05.downloadmovie.cn, port: 65083, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: cn05.downloadmovie.cn}, udp: true}
-  - {name: github.com/mianfeifq |🇺🇸_US_美国_3, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 122 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 124 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN-103.56.60.56-4845, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 698 VMS, server: cn04.downloadmovie.cn, port: 65036, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}, udp: true}
-  - {name: CN-120.233.29.189-0817, server: cn03.downloadmovie.cn, port: 65041, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: cn03.downloadmovie.cn}, udp: true}
-  - {name: CN 139 SSS, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 119 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 120 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN-103.56.60.56-4853, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 1890 VMS, server: 120.233.29.189, port: 65023, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.29.189}, udp: true}
-  - {name: CN 699 VMS, server: cn04.downloadmovie.cn, port: 65025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}, udp: true}
-  - {name: CN 754 VMS, server: 47.112.153.114, port: 56376, type: vmess, uuid: f952e4e9-e7fa-47be-a806-6946158616b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 47.112.153.114}, udp: true}
+  - {name: 日本(youtube阿伟科技) 3, server: cdn.linil.ml, port: 443, type: vmess, uuid: 7da1771d-9745-4f2d-bfc9-9f0184932a9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /baervws, ws-headers: {Host: db.652040231.xyz}, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_美国_629, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(youtube阿伟科技), server: ttt3.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt3.swiftfalcon.app, skip-cert-verify: true, udp: true}
+  - {name: 韩国(youtube阿伟科技), server: cdn.linil.ml, port: 443, type: vmess, uuid: 2fb8c800-89c1-44dd-a425-b37bc0bb2a0a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f65a148681c42/, ws-headers: {Host: zxdz1962cc.czsx1624.tk}, udp: true}
+  - {name: 韩国(youtube阿伟科技) 2, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
+  - {name: _SG_新加坡, server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: 美国(yudou66.com 玉豆免费节点), server: xjp.azzhuangaping.tw, port: 80, type: vmess, uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adobe, ws-headers: {Host: xjp.azzhuangaping.tw}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_59, server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(youtube阿伟科技), server: azgy001.xibai6.top, port: 20785, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_11, server: 14.29.124.174, port: 11006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 德国(yudou66.com 玉豆免费节点), server: cdn.linil.ml, port: 443, type: vmess, uuid: abf7c262-fdbe-4ddf-8668-bb36b867f302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ukqzvws, ws-headers: {Host: eu.ratx.tech}, udp: true}
+  - {name: 德国(youtube阿伟科技), server: stockholm.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: stockholm.napsternetv.com}, udp: true}
+  - {name: 香港(youtube阿伟科技), server: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: s3.cjhh.beauty}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆免费节点), server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.ml}, udp: true}
+  - {name: CN_73, server: 49.234.34.180, port: 443, type: vmess, uuid: 6e0a01f3-4fce-4cdd-ab05-ee5d2254b058, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 49.234.34.180}, udp: true}
   - {name: (Youtube/TG：俊佳科技JJ)_中国_147, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: github.com/mianfeifq |🇺🇸美国_7, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 118 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 565 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 123 TJN, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: github.com/mianfeifq |🇺🇸_US_美国_6, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: v2rayfree.eu.org - 英国  56, server: bai-piao-wang-zhe.iplc.nl.884899.cf, port: 443, type: trojan, password: e49f9132-4f1c-4a11-998f-0b90697254e6, sni: bai-piao-wang-zhe.iplc.nl.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: 日本(youtube阿伟科技), server: cn2.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cn2.soow.win}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点), server: 172.67.167.100, port: 443, type: vmess, uuid: f5e74e66-0241-447c-83a4-a4005f438536, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: m4.v2rayfree1.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_71, server: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty}, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_中国_665, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_中国_341, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: YouTube-aweikeji}, udp: true}
+  - {name: 日本(yudou66.com 玉豆免费节点), server: cdn.linil.ml, port: 443, type: vmess, uuid: 7da1771d-9745-4f2d-bfc9-9f0184932a9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /baervws, ws-headers: {Host: db.652040231.xyz}, udp: true}
+  - {name: 台湾(youtube阿伟科技), server: fmhfa-1039-v2-1.tpe-d-hinet.nd.cjhh.mom, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: 俄罗斯(yudou66.com 玉豆免费节点), server: els.tdzjing.xyz, port: 80, type: vmess, uuid: 00000000-1111-1111-1111-222222222222, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印尼(yudou66.com 玉豆免费节点), server: id-herza.v2-ray.com, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/hkaa0/6315d6fd8ece0/, ws-headers: {Host: id-herza.v2-ray.com}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点) 2, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: 美国(youtube阿伟科技) 2, server: ex.755657.xyz, port: 8443, type: vmess, uuid: 11b8206c-8ae2-4ab3-a92c-208cdb8cc73d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /javasdkyhgudf, ws-headers: {Host: ex.755657.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_10, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 印度(youtube阿伟科技), server: dakkehk.com, port: 443, type: vmess, uuid: d7b7be71-c0c1-48f4-acdb-32f740e88c44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /175f5d/, ws-headers: {Host: dakkehk.com}, udp: true}
+  - {name: 荷兰(youtube阿伟科技), server: 42.186.175.8, port: 443, type: vmess, uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.99684777.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_21, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(yudou66.com 玉豆免费节点) 2, server: v4.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: 美国(youtube阿伟科技) 3, server: v4.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: v4.heduian.online}, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_65, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_63, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_14, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_08, server: 14.29.124.174, port: 11039, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 美国(youtube阿伟科技) 4, server: v29.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_62, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_12, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆免费节点) 2, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
+  - {name: 美国(yudou66.com 玉豆免费节点) 3, server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点) 3, server: hanoi05.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_22, server: 14.29.124.174, port: 11046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_18, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_53, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_31, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 德国(youtube阿伟科技) 2, server: h961359.waihuizhibiaowang.com, port: 15743, type: ss, cipher: chacha20-ietf-poly1305, password: a611f6db-6bcd-11eb-baa0-0ae09aa79902, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -268,255 +232,221 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港(youtube阿伟科技)
+      - 台湾(youtube阿伟科技)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -532,63 +462,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-104.19.3.12-1899
-      - CN-14.29.124.168-4678
-      - github.com/mianfeifq |印度(youtube阿伟科技)
-      - CN 238 VMS
-      - CN 793 VMS
-      - UN 1317 VMS
-      - US-38.121.43.65-0800
-      - CN 199 VMS
-      - CN 198 VMS
-      - CN 728 VMS
-      - github.com/mianfeifq |🇺🇸美国_4
-      - CN 207 VMS
-      - CN 440 VMS
-      - CN 1886 VMS
-      - CN 210 VMS
-      - CN 28 SSS
-      - CN 183 VMS
-      - CN 650 VMS
-      - CN 179 VMS
-      - _中国_VV科技_23
-      - CN 31 SSS
-      - CN 203 VMS
-      - github.com/mianfeifq |🇺🇸_US_美国_13
-      - CN 29 SSS
-      - CN 143 SSS
-      - 新加坡 95
-      - CN 244 VMS
-      - CN 1892 VMS
-      - 印度 50
-      - CN-120.233.150.146-4771
-      - Việt Nam (7)
-      - CN 396 VMS
-      - CN 35 VMS
-      - CN 38 VMS
-      - _油管：全网最强白嫖 53
-      - _油管：全网最强白嫖 42
-      - CN-111.45.22.152-1191
-      - github.com/mianfeifq |🇺🇸_US_美国_3
-      - CN 122 TJN
-      - CN 124 TJN
-      - CN-103.56.60.56-4845
-      - CN 698 VMS
-      - CN-120.233.29.189-0817
-      - CN 139 SSS
-      - CN 119 TJN
-      - CN 120 TJN
-      - CN-103.56.60.56-4853
-      - CN 1890 VMS
-      - CN 699 VMS
-      - CN 754 VMS
+      - 日本(youtube阿伟科技) 3
+      - (Youtube/TG:俊佳科技JJ)_美国_629
+      - 新加坡(youtube阿伟科技)
+      - 韩国(youtube阿伟科技)
+      - 韩国(youtube阿伟科技) 2
+      - _SG_新加坡
+      - 美国(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 美国(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 德国(yudou66.com 玉豆免费节点)
+      - 德国(youtube阿伟科技)
+      - 香港(youtube阿伟科技)
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - CN_73
       - (Youtube/TG：俊佳科技JJ)_中国_147
-      - github.com/mianfeifq |🇺🇸美国_7
-      - CN 118 TJN
-      - CN 565 TJN
-      - CN 123 TJN
-      - github.com/mianfeifq |🇺🇸_US_美国_6
-      - v2rayfree.eu.org - 英国  56
+      - 日本(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_71
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 日本(yudou66.com 玉豆免费节点)
+      - 台湾(youtube阿伟科技)
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 印尼(yudou66.com 玉豆免费节点)
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 2
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - 印度(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - 美国(yudou66.com 玉豆免费节点) 2
+      - 美国(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - Relay_🇨🇳CN-🇭🇰HK_14
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - 美国(youtube阿伟科技) 4
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - 美国(yudou66.com 玉豆免费节点) 3
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - Relay_🇨🇳CN-🇭🇰HK_31
+      - 德国(youtube阿伟科技) 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
