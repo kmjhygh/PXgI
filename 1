@@ -5,215 +5,507 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本(youtube阿伟科技) 3, server: cdn.linil.ml, port: 443, type: vmess, uuid: 7da1771d-9745-4f2d-bfc9-9f0184932a9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /baervws, ws-headers: {Host: db.652040231.xyz}, udp: true}
-  - {name: (Youtube/TG:俊佳科技JJ)_美国_629, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技), server: ttt3.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt3.swiftfalcon.app, skip-cert-verify: true, udp: true}
-  - {name: 韩国(youtube阿伟科技), server: cdn.linil.ml, port: 443, type: vmess, uuid: 2fb8c800-89c1-44dd-a425-b37bc0bb2a0a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f65a148681c42/, ws-headers: {Host: zxdz1962cc.czsx1624.tk}, udp: true}
-  - {name: 韩国(youtube阿伟科技) 2, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
-  - {name: _SG_新加坡, server: sg-sin-krn-v2.node.inforun.work, port: 12888, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: 美国(yudou66.com 玉豆免费节点), server: xjp.azzhuangaping.tw, port: 80, type: vmess, uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adobe, ws-headers: {Host: xjp.azzhuangaping.tw}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_59, server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国(youtube阿伟科技), server: azgy001.xibai6.top, port: 20785, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_11, server: 14.29.124.174, port: 11006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 德国(yudou66.com 玉豆免费节点), server: cdn.linil.ml, port: 443, type: vmess, uuid: abf7c262-fdbe-4ddf-8668-bb36b867f302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ukqzvws, ws-headers: {Host: eu.ratx.tech}, udp: true}
-  - {name: 德国(youtube阿伟科技), server: stockholm.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: stockholm.napsternetv.com}, udp: true}
-  - {name: 香港(youtube阿伟科技), server: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: s3.cjhh.beauty}, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆免费节点), server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.ml}, udp: true}
-  - {name: CN_73, server: 49.234.34.180, port: 443, type: vmess, uuid: 6e0a01f3-4fce-4cdd-ab05-ee5d2254b058, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 49.234.34.180}, udp: true}
-  - {name: (Youtube/TG：俊佳科技JJ)_中国_147, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: 日本(youtube阿伟科技), server: cn2.soow.win, port: 50027, type: vmess, uuid: c1d0ae9e-f08a-3f81-962d-ca19b52c760d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: cn2.soow.win}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆免费节点), server: 172.67.167.100, port: 443, type: vmess, uuid: f5e74e66-0241-447c-83a4-a4005f438536, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: m4.v2rayfree1.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_71, server: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: qbuxf-1049-v2-1.hkg-r-kcd-c.ap.cjhh.beauty}, udp: true}
-  - {name: (Youtube/TG:俊佳科技JJ)_中国_665, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/mengge88888888}, udp: true}
-  - {name: (Youtube/TG:俊佳科技JJ)_中国_341, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: YouTube-aweikeji}, udp: true}
+  - {name: github.com/freefq - 亚太地区  17, server: 103.173.178.110, port: 40443, type: vmess, uuid: 7ED6C76A-277E-1D03-2C6F-48B728899686, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  42, server: 185.112.83.35, port: 40443, type: vmess, uuid: B6C76F8A-77ED-F562-654E-59F997F58426, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 日本(yudou66.com 玉豆免费节点), server: cdn.linil.ml, port: 443, type: vmess, uuid: 7da1771d-9745-4f2d-bfc9-9f0184932a9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /baervws, ws-headers: {Host: db.652040231.xyz}, udp: true}
-  - {name: 台湾(youtube阿伟科技), server: fmhfa-1039-v2-1.tpe-d-hinet.nd.cjhh.mom, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
-  - {name: 俄罗斯(yudou66.com 玉豆免费节点), server: els.tdzjing.xyz, port: 80, type: vmess, uuid: 00000000-1111-1111-1111-222222222222, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印尼(yudou66.com 玉豆免费节点), server: id-herza.v2-ray.com, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/hkaa0/6315d6fd8ece0/, ws-headers: {Host: id-herza.v2-ray.com}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆免费节点) 2, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 美国(youtube阿伟科技) 2, server: ex.755657.xyz, port: 8443, type: vmess, uuid: 11b8206c-8ae2-4ab3-a92c-208cdb8cc73d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /javasdkyhgudf, ws-headers: {Host: ex.755657.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_10, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 印度(youtube阿伟科技), server: dakkehk.com, port: 443, type: vmess, uuid: d7b7be71-c0c1-48f4-acdb-32f740e88c44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /175f5d/, ws-headers: {Host: dakkehk.com}, udp: true}
-  - {name: 荷兰(youtube阿伟科技), server: 42.186.175.8, port: 443, type: vmess, uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.99684777.xyz}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_21, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国(yudou66.com 玉豆免费节点) 2, server: v4.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
-  - {name: 美国(youtube阿伟科技) 3, server: v4.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: v4.heduian.online}, udp: true}
-  - {name: Relay_🇨🇳CN-🇷🇺RU_65, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_63, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国(yudou66.com 玉豆免费节点), server: cdn.linil.ml, port: 443, type: vmess, uuid: abf7c262-fdbe-4ddf-8668-bb36b867f302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ukqzvws, ws-headers: {Host: eu.ratx.tech}, udp: true}
+  - {name: github.com/freefq - 日本  3, server: 99hk01.tfzhc.top, port: 44333, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99hk01.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_中国_665, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: github.com/freefq - 江西省南昌市移动 7, server: 117.164.185.220, port: 61022, type: ss, cipher: chacha20-ietf-poly1305, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, udp: true}
+  - {name: mianfeifq |德国(youtube科技) 3, server: cdn.linil.ml, port: 443, type: vmess, uuid: abf7c262-fdbe-4ddf-8668-bb36b867f302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ukqzvws, ws-headers: {Host: eu.ratx.tech}, udp: true}
   - {name: Relay_🇨🇳CN-🇭🇰HK_14, server: 14.29.124.174, port: 11050, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_08, server: 14.29.124.174, port: 11039, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国(youtube阿伟科技) 4, server: v29.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oooo, ws-headers: {Host: baidu.com}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_62, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_12, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 新加坡(yudou66.com 玉豆免费节点) 2, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
-  - {name: 美国(yudou66.com 玉豆免费节点) 3, server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
-  - {name: 欧洲(yudou66.com 玉豆免费节点) 3, server: hanoi05.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_22, server: 14.29.124.174, port: 11046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_18, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_53, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _US_美国_8, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 日本  4, server: 99hk05.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99hk05.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_美国_629, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳CN-🇭🇰HK_31, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 德国(youtube阿伟科技) 2, server: h961359.waihuizhibiaowang.com, port: 15743, type: ss, cipher: chacha20-ietf-poly1305, password: a611f6db-6bcd-11eb-baa0-0ae09aa79902, udp: true}
+  - {name: 日本 B/01 x1.0, server: 117.164.185.220, port: 11001, type: trojan, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, skip-cert-verify: true, udp: true}
+  - {name: 日本(youtube阿伟科技) 3, server: cdn.linil.ml, port: 443, type: vmess, uuid: 7da1771d-9745-4f2d-bfc9-9f0184932a9c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /baervws, ws-headers: {Host: db.652040231.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_10, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_22, server: 14.29.124.174, port: 11046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 瑞典  16, server: 213.226.71.174, port: 40443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 35, server: els200.jklist.ga, port: 2095, type: vmess, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wo.png, ws-headers: {Host: els200.jklist.ga}, udp: true}
+  - {name: mianfeifq |🇭🇰_HK_wmt(9.10a)_115, server: 20.205.63.249, port: 20721, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
+  - {name: 德国(youtube阿伟科技), server: stockholm.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: stockholm.napsternetv.com}, udp: true}
+  - {name: (Youtube/TG:俊佳科技JJ)_中国_341, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: YouTube-aweikeji}, udp: true}
+  - {name: 韩国(youtube阿伟科技), server: seoul.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
+  - {name: mianfeifq |🇺🇸 US 12, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hass.win, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 新加坡Amazon数据中心 2, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: CN_73, server: 49.234.34.180, port: 443, type: vmess, uuid: 6e0a01f3-4fce-4cdd-ab05-ee5d2254b058, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 49.234.34.180}, udp: true}
+  - {name: 日本 C/01 x1.0, server: 183.245.146.20, port: 11001, type: trojan, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆免费节点), server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.ml}, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 51, server: jp-nrt-04-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_53, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国(TG频道:@kxswa), server: 183.245.146.20, port: 41001, type: trojan, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |1.21| 测试CT美国0x, server: 45.33.57.17, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技), server: azgy001.xibai6.top, port: 20785, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点), server: 172.67.167.100, port: 443, type: vmess, uuid: f5e74e66-0241-447c-83a4-a4005f438536, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: m4.v2rayfree1.xyz}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 37, server: 172.67.167.120, port: 443, type: vmess, uuid: f5e74e66-0241-447c-83a4-a4005f438536, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: m4.v2rayfree1.xyz}, udp: true}
+  - {name: Relay_🏁ZZ-🇩🇪DE_168|27.61Mb, server: fr.2121999.xyz, port: 8880, type: vmess, uuid: 2a3955be-acbc-48b6-ab96-559a967ae7fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr.2121999.xyz}, udp: true}
+  - {name: mianfeifq |wmt(9.10a)_154, server: 103.173.178.110, port: 40443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港_2, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 更多分享：www.vtblh.com, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |sshocean-hkaa0 003, server: nl2.v2rayserv.com, port: 80, type: vmess, uuid: 364cf68d-8821-4e57-8189-0d16bac31a58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: nl2.v2rayserv.com}, udp: true}
+  - {name: mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn, server: cdn.linil.ml, port: 443, type: vmess, uuid: 7ac0dc7a-0ec5-4b62-ab61-4d0c00fc113a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a3d4f6808291728/, ws-headers: {Host: jlnt8169.czsx1624.tk}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 33, server: fr.2121999.xyz, port: 8880, type: vmess, uuid: 2a3955be-acbc-48b6-ab96-559a967ae7fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr.2121999.xyz}, udp: true}
+  - {name: 印度 006, server: 13.233.199.219, port: 443, type: vmess, uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /af81144dc252b94/, ws-headers: {Host: 13.233.199.219}, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: mianfeifq |🇭🇰_HK_wmt(9.10a)_118, server: 20.205.63.249, port: 20727, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  22, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 新加坡(youtube阿伟科技), server: ttt3.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt3.swiftfalcon.app, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 2, server: 36.138.100.57, port: 61002, type: trojan, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |11.64|USwmt910a116, server: 20.239.188.10, port: 20721, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |🇺🇸_US_wmt(9.10a)_117, server: 20.239.188.10, port: 20718, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
+  - {name: 台湾B|tg频道:@ripaojiedian, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99tw03.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_08, server: 14.29.124.174, port: 11039, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: mianfeifq |0.51| US133 TGpeekfun, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}, udp: true}
+  - {name: US_160|4.89Mb, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_115, server: 14.29.124.168, port: 24003, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15, server: ca1.vmess.tunnel.cx, port: 80, type: vmess, uuid: 0429f7ce-2c73-11ed-b9c2-8b16281b86ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: ca1.vmess.tunnel.cx}, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb, server: asjlg-1041-v2-1.hkg-d-hkt.nd.cjhh.mom, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: asjlg-1041-v2-1.hkg-d-hkt.nd.cjhh.mom}, udp: true}
+  - {name: 新加坡(yudou66.com 玉豆免费节点) 2, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
+  - {name: github.com/freefq - 瑞典  13, server: 213.226.71.174, port: 40443, type: vmess, uuid: B6C76F8A-77ED-F562-654E-59F997F58426, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "|11.53Mb", server: ttt1.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt1.swiftfalcon.app, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_117, server: 14.29.124.174, port: 11032, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12, server: 205.185.121.4, port: 80, type: vmess, uuid: 1e45ace9-8284-445b-b8fd-195b51ec8b6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 205.185.121.4}, udp: true}
+  - {name: github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25, server: nl2.v2rayserv.com, port: 80, type: vmess, uuid: 364cf68d-8821-4e57-8189-0d16bac31a58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: nl2.v2rayserv.com}, udp: true}
+  - {name: _US_wmt(9.10a)_121, server: 20.239.188.10, port: 20804, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆免费节点), server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: 🇨🇳, server: 14.29.124.174, port: 11041, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 日本优化|tg频道:@ripaojiedian, server: 99jp.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99jp.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_122, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_21, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 西班牙  30, server: 185.194.30.40, port: 40443, type: vmess, uuid: B6C76F8A-77ED-F562-654E-59F997F58426, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |1.34| 测试澳大利亚0x, server: 194.195.254.50, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: 台湾C|tg频道:@ripaojiedian, server: 99tw02.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99tw02.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港_1, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_12, server: 14.29.124.174, port: 11019, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_18, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 印度孟买Amazon数据中心 20, server: 13.235.0.244, port: 443, type: vmess, uuid: be182928-d57c-43bc-bb8f-cd0038924943, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0ea70e497192b88/, ws-headers: {Host: 13.235.0.244}, udp: true}
+  - {name: 日本 C/02 x1.0, server: 183.245.146.20, port: 11002, type: trojan, password: 623e1900-473d-4b72-8d6b-c3a2e3223e3e, skip-cert-verify: true, udp: true}
+  - {name: 中秋快乐！, server: 172.105.222.177, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: 中国-548.3KB/s, server: 14.29.124.174, port: 11012, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_11, server: 14.29.124.174, port: 11006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点) 2, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: mianfeifq |俄罗斯(youtube科技) 4, server: 185.112.83.35, port: 40443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |🇬🇧_GB_wmt(9.10a)_112, server: 185.194.30.40, port: 40443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 2, server: 152.70.136.12, port: 23054, type: vmess, uuid: 199ab409-63c4-43f7-8164-7a8231be4a3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾A|tg频道:@ripaojiedian, server: 96tw.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 96tw.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 印尼(yudou66.com 玉豆免费节点), server: id-herza.v2-ray.com, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/hkaa0/6315d6fd8ece0/, ws-headers: {Host: id-herza.v2-ray.com}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_62, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 罗马尼亚  26, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}, udp: true}
+  - {name: github.com/freefq - 加拿大  28, server: 99tw01.tfzhc.top, port: 443, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99tw01.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 欧洲  29, server: mx1.v2rayserv.com, port: 80, type: vmess, uuid: d54226f9-4427-4466-957f-173b0a5b1cbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: mx1.v2rayserv.com}, udp: true}
+  - {name: github.com/freefq - 欧洲  32, server: mx1.v2rayserv.com, port: 80, type: vmess, uuid: f1b438a7-b8f3-4cd7-8aca-d54efdaf64e3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: mx1.v2rayserv.com}, udp: true}
+  - {name: github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 台湾省台北市中华电信 44, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州费利蒙 48, server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: US_152|26.83Mb, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_59, server: 14.29.124.174, port: 11018, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 欧洲(yudou66.com 玉豆免费节点) 3, server: hanoi05.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
+  - {name: github.com/freefq - 亚太地区  19, server: id-herza.v2-ray.com, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/hkaa0/6315d6fd8ece0/, ws-headers: {Host: id-herza.v2-ray.com}, udp: true}
+  - {name: github.com/freefq - 广东省佛山市移动 24, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: github.com/freefq - 罗马尼亚  34, server: 94.177.8.87, port: 40443, type: vmess, uuid: 7ED6C76A-277E-1D03-2C6F-48B728899686, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 49, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: 5ADDADF4-E05B-65E6-A409-E08CEA8826DF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: seoul.napsternetv.com}, udp: true}
+  - {name: SG 6 → openitsub.com, server: 139.162.46.222, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: 狮城C|tg频道:@ripaojiedian, server: 99hk02.tfzhc.top, port: 44333, type: trojan, password: 53933382-fb70-48bd-adf5-363ae1972459, sni: 99hk02.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 越南 003, server: hanoi05.vifast.net, port: 80, type: vmess, uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hanoi05.vifast.net}, udp: true}
+  - {name: US 40, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hass.win, skip-cert-verify: true, udp: true}
+  - {name: mianfeifq |2.06| 测试CT加拿大0x, server: 170.187.182.212, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: 中国-472.9KB/s, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 俄罗斯(yudou66.com 玉豆免费节点), server: els.tdzjing.xyz, port: 80, type: vmess, uuid: 00000000-1111-1111-1111-222222222222, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰(youtube阿伟科技), server: 42.186.175.8, port: 443, type: vmess, uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.99684777.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_63, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 印度孟买Amazon数据中心 23, server: 13.233.199.219, port: 443, type: vmess, uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /af81144dc252b94/, ws-headers: {Host: 13.233.199.219}, udp: true}
+  - {name: "", server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB 17, server: 18.130.157.11, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_27|7.23Mb, server: jp-nrt-04-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: jp-nrt-04-v2.jd.cjhh.mom}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_145|0.94Mb, server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol, port: 888, type: vmess, uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol}, udp: true}
+  - {name: (Youtube/TG：俊佳科技JJ)_中国_147, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_65, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@hkaa0, server: id-herza.v2-ray.com, port: 80, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fastssh/hkaa0/6315d6fd8ece0/, ws-headers: {Host: id-herza.v2-ray.com}, udp: true}
+  - {name: _03, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -232,221 +524,519 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
+      - _CN_中国->🇭🇰_HK_香港_2
+      - mianfeifq |sshocean-hkaa0 003
+      - 台湾B|tg频道:@ripaojiedian
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - 台湾A|tg频道:@ripaojiedian
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - TG@hkaa0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -462,54 +1052,127 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本(youtube阿伟科技) 3
-      - (Youtube/TG:俊佳科技JJ)_美国_629
-      - 新加坡(youtube阿伟科技)
-      - 韩国(youtube阿伟科技)
-      - 韩国(youtube阿伟科技) 2
-      - _SG_新加坡
-      - 美国(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_59
-      - 美国(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_11
-      - 德国(yudou66.com 玉豆免费节点)
-      - 德国(youtube阿伟科技)
-      - 香港(youtube阿伟科技)
-      - 新加坡(yudou66.com 玉豆免费节点)
-      - CN_73
-      - (Youtube/TG：俊佳科技JJ)_中国_147
-      - 日本(youtube阿伟科技)
-      - 欧洲(yudou66.com 玉豆免费节点)
-      - Relay_🇨🇳CN-🇭🇰HK_71
-      - (Youtube/TG:俊佳科技JJ)_中国_665
-      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - github.com/freefq - 亚太地区  17
+      - github.com/freefq - 美国  42
       - 日本(yudou66.com 玉豆免费节点)
-      - 台湾(youtube阿伟科技)
-      - 俄罗斯(yudou66.com 玉豆免费节点)
-      - 印尼(yudou66.com 玉豆免费节点)
-      - 欧洲(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 2
-      - Relay_🇨🇳CN-🇭🇰HK_10
-      - 印度(youtube阿伟科技)
-      - 荷兰(youtube阿伟科技)
-      - Relay_🇨🇳CN-🇭🇰HK_21
-      - 美国(yudou66.com 玉豆免费节点) 2
-      - 美国(youtube阿伟科技) 3
-      - Relay_🇨🇳CN-🇷🇺RU_65
-      - Relay_🇨🇳CN-🇭🇰HK_63
+      - 德国(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 日本  3
+      - (Youtube/TG:俊佳科技JJ)_中国_665
+      - github.com/freefq - 江西省南昌市移动 7
+      - mianfeifq |德国(youtube科技) 3
       - Relay_🇨🇳CN-🇭🇰HK_14
-      - Relay_🇨🇳CN-🇭🇰HK_08
-      - 美国(youtube阿伟科技) 4
-      - Relay_🇨🇳CN-🇭🇰HK_62
-      - Relay_🇨🇳CN-🇭🇰HK_12
-      - 新加坡(yudou66.com 玉豆免费节点) 2
-      - 美国(yudou66.com 玉豆免费节点) 3
-      - 欧洲(yudou66.com 玉豆免费节点) 3
-      - Relay_🇨🇳CN-🇭🇰HK_22
-      - Relay_🇨🇳CN-🇭🇰HK_18
-      - Relay_🇨🇳CN-🇭🇰HK_53
+      - _US_美国_8
+      - github.com/freefq - 日本  4
+      - (Youtube/TG:俊佳科技JJ)_美国_629
       - Relay_🇨🇳CN-🇭🇰HK_31
-      - 德国(youtube阿伟科技) 2
+      - 日本 B/01 x1.0
+      - 日本(youtube阿伟科技) 3
+      - Relay_🇨🇳CN-🇭🇰HK_10
+      - Relay_🇨🇳CN-🇭🇰HK_22
+      - github.com/freefq - 瑞典  16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 35
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_115
+      - 德国(youtube阿伟科技)
+      - (Youtube/TG:俊佳科技JJ)_中国_341
+      - 韩国(youtube阿伟科技)
+      - mianfeifq |🇺🇸 US 12
+      - github.com/freefq - 新加坡Amazon数据中心 2
+      - CN_73
+      - 日本 C/01 x1.0
+      - 新加坡(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 广东省广州市移动 51
+      - Relay_🇨🇳CN-🇭🇰HK_53
+      - 中国(TG频道:@kxswa)
+      - mianfeifq |1.21| 测试CT美国0x
+      - 美国(youtube阿伟科技)
+      - 欧洲(yudou66.com 玉豆免费节点)
+      - github.com/freefq - 美国CloudFlare节点 37
+      - Relay_🏁ZZ-🇩🇪DE_168|27.61Mb
+      - mianfeifq |wmt(9.10a)_154
+      - _CN_中国->🇭🇰_HK_香港_2
+      - 更多分享：www.vtblh.com
+      - mianfeifq |sshocean-hkaa0 003
+      - mianfeifq |🇸🇬 新加坡-ws-v4/v6-cdn
+      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - 印度 006
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 8
+      - mianfeifq |🇭🇰_HK_wmt(9.10a)_118
+      - github.com/freefq - 美国  22
+      - 新加坡(youtube阿伟科技)
+      - 中国(TG频道:@kxswa) 2
+      - mianfeifq |11.64|USwmt910a116
+      - mianfeifq |🇺🇸_US_wmt(9.10a)_117
+      - 台湾B|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_08
+      - mianfeifq |0.51| US133 TGpeekfun
+      - US_160|4.89Mb
+      - Relay_🇨🇳CN-🇹🇼TW_115
+      - github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 15
+      - Relay_🇭🇰HK-🇭🇰HK_44|11.00Mb
+      - 新加坡(yudou66.com 玉豆免费节点) 2
+      - github.com/freefq - 瑞典  13
+      - "|11.53Mb"
+      - Relay_🇨🇳CN-🇭🇰HK_117
+      - github.com/freefq - 美国内华达州拉斯维加斯BuyVM 12
+      - github.com/freefq - 荷兰阿姆斯特丹Online S.A.S 25
+      - _US_wmt(9.10a)_121
+      - 美国(yudou66.com 玉豆免费节点)
+      - 🇨🇳
+      - 日本优化|tg频道:@ripaojiedian
+      - Relay_🇨🇳CN-🇭🇰HK_122
+      - Relay_🇨🇳CN-🇭🇰HK_21
+      - github.com/freefq - 西班牙  30
+      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 36
+      - mianfeifq |1.34| 测试澳大利亚0x
+      - 台湾C|tg频道:@ripaojiedian
+      - _CN_中国->🇭🇰_HK_香港_1
+      - Relay_🇨🇳CN-🇭🇰HK_12
+      - Relay_🇨🇳CN-🇭🇰HK_18
+      - github.com/freefq - 印度孟买Amazon数据中心 20
+      - 日本 C/02 x1.0
+      - 中秋快乐！
+      - 中国-548.3KB/s
+      - Relay_🇨🇳CN-🇭🇰HK_11
+      - 欧洲(yudou66.com 玉豆免费节点) 2
+      - mianfeifq |俄罗斯(youtube科技) 4
+      - mianfeifq |🇬🇧_GB_wmt(9.10a)_112
+      - 美国(youtube阿伟科技) 2
+      - 台湾A|tg频道:@ripaojiedian
+      - 印尼(yudou66.com 玉豆免费节点)
+      - Relay_🇨🇳CN-🇭🇰HK_62
+      - github.com/freefq - 罗马尼亚  26
+      - github.com/freefq - 加拿大  28
+      - github.com/freefq - 欧洲  29
+      - github.com/freefq - 欧洲  32
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 38
+      - github.com/freefq - 台湾省台北市中华电信 44
+      - github.com/freefq - 美国加利福尼亚州费利蒙 48
+      - US_152|26.83Mb
+      - Relay_🇨🇳CN-🇭🇰HK_59
+      - 欧洲(yudou66.com 玉豆免费节点) 3
+      - github.com/freefq - 亚太地区  19
+      - github.com/freefq - 广东省佛山市移动 24
+      - github.com/freefq - 罗马尼亚  34
+      - github.com/freefq - 美国CloudFlare节点 49
+      - SG 6 → openitsub.com
+      - 狮城C|tg频道:@ripaojiedian
+      - 越南 003
+      - US 40
+      - mianfeifq |2.06| 测试CT加拿大0x
+      - 中国-472.9KB/s
+      - 俄罗斯(yudou66.com 玉豆免费节点)
+      - 荷兰(youtube阿伟科技)
+      - Relay_🇨🇳CN-🇭🇰HK_63
+      - github.com/freefq - 印度孟买Amazon数据中心 23
+      - ""
+      - GB 17
+      - Relay_🇨🇳CN-🏁ZZ_27|7.23Mb
+      - Relay_🇺🇸US-🇺🇸US_145|0.94Mb
+      - (Youtube/TG：俊佳科技JJ)_中国_147
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - TG@hkaa0
+      - _03
+      - Relay_🇨🇳CN-🇭🇰HK_23|1.94Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
