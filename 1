@@ -5,187 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇨🇳CN_62, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Youtube顺丰资源 - 伊朗  28, server: arvancloud.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /graphql, ws-headers: {Host: mahsaproxy.com}, udp: true}
-  - {name: 俄罗斯联邦(Youtube顺丰资源) 2, server: jh193ru173.knctrip.com, port: 443, type: vmess, uuid: abd9668e-7ade-437a-b0c7-9e7447031684, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /knctrip, ws-headers: {Host: jh193ru173.knctrip.com}, udp: true}
   - {name: Relay_🇨🇳CN-🇨🇳CN_51, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯联邦(Youtube顺丰资源), server: 88.210.37.18, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_127, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
-  - {name: ES_79, server: 185.194.30.40, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_51 2, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN_76, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_70, server: 121.41.86.94, port: 1, type: vmess, uuid: 3781e552-2d72-40e4-dc1f-f06e10c8c1fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04, server: 116.129.254.6, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_111, server: 47.243.134.223, port: 36079, type: vmess, uuid: 73eb2fee-b1aa-44a6-af18-224c0ab348e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.134.223]}}, udp: true}
-  - {name: UA1→Youtube顺丰资源, server: 185.253.47.79, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: US_119, server: 154.85.62.219, port: 64901, type: vmess, uuid: b01cad59-e722-4455-9745-a1ca08db07b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [154.85.62.219]}}, udp: true}
-  - {name: Youtube顺丰资源29, server: 94.177.8.87, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN_54, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 121.41.86.94}, udp: true}
-  - {name: Relay_-🇧🇭BH_07, server: 116.129.254.6, port: 9025, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RO_104, server: 94.177.8.87, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_38, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_37, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_32, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 中国(Youtube顺丰资源) 4 3, server: 221.131.165.72, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国Youtube顺丰资源 9, server: 221.131.165.72, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰(Youtube顺丰资源), server: 94.177.8.87, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中国Youtube顺丰资源 12 2, server: 221.131.165.72, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_59, server: simxe-1055-v2-1.hkg-r-kcd-d.nd.cjhh.mom, port: 29978, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: simxe-1055-v2-1.hkg-r-kcd-d.nd.cjhh.mom}, udp: true}
-  - {name: Relay_-🇹🇼TW_02, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 13 → Youtube顺丰资源, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-Youtube顺丰资源2-3, server: 111.45.22.246, port: 16112, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国(Youtube顺丰资源) 4, server: 221.131.165.72, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国-Youtube顺丰资源2-18, server: 116.129.254.6, port: 9025, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_52, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZA_147, server: 156.240.119.242, port: 33719, type: vmess, uuid: a0b66cf7-9385-4643-9e61-3a885183bec1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [156.240.119.242]}}, udp: true}
-  - {name: Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045, server: az.hk01.paopaocloud.cyou, port: 10011, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: paopao.v2.hk07.paopaocloud.cyou}, udp: true}
-  - {name: CA_28, server: 165.154.227.242, port: 443, type: vmess, uuid: 1d8999fd-9045-40df-83e8-190721913412, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 165.154.227.242}, udp: true}
-  - {name: Youtube顺丰资源_🇺🇸US-🇺🇸US_961, server: sg02.xiaoqi99.cf, port: 63632, type: vmess, uuid: 49166929-020e-4ef0-97e7-7989ce92fc69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg02.xiaoqi99.cf}, udp: true}
-  - {name: Youtube顺丰资源US_943, server: 170.187.230.231, port: 63632, type: vmess, uuid: 49166929-020e-4ef0-97e7-7989ce92fc69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 170.187.230.231}, udp: true}
-  - {name: Youtube顺丰资源 - 美国  5, server: 146.190.2.54, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /didi, ws-headers: {Host: 146.190.2.54}, udp: true}
-  - {name: Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217, server: asswb-1036-v2-1.hkg-d-kcd.nd.cjhh.mom, port: 888, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
-  - {name: 新加坡-Youtube顺丰资源2-9, server: 172.104.56.233, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: 172.104.56.233}, udp: true}
-  - {name: 英国(Youtube顺丰资源), server: 185.194.30.40, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中国-Youtube顺丰资源-53, server: simxe-1055-v2-1.hkg-r-kcd-d.nd.cjhh.mom, port: 29978, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: edge.cjhh.mom}, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_62, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_62 2, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_76 2, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾=tg频道:@bpjzx2=9, server: relay_cm1.flyxxl.xyz, port: 46096, type: vmess, uuid: c15eefe5-a42f-4cc7-ab02-376b6dfed9e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pic/fjiew2-054j0gewn23k-1fr, ws-headers: {Host: f932c3d98981b.download.microsoft.com}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5, server: lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol, port: 888, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: www.189.cn}, udp: true}
+  - {name: 美国-4.38MB/s(Youtube:不良林), server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,192 +84,72 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-Youtube顺丰资源2-3
+      - 台湾=tg频道:@bpjzx2=9
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -405,47 +165,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇳CN_62
-      - Youtube顺丰资源 - 伊朗  28
-      - 俄罗斯联邦(Youtube顺丰资源) 2
       - Relay_🇨🇳CN-🇨🇳CN_51
-      - 俄罗斯联邦(Youtube顺丰资源)
-      - US_127
-      - ES_79
+      - Relay_🇨🇳CN-🇨🇳CN_51 2
       - CN_76
-      - CN_70
-      - Youtube顺丰资源_🇨🇳CN-🇧🇭BH_04
-      - US_111
-      - UA1→Youtube顺丰资源
-      - US_119
-      - Youtube顺丰资源29
-      - CN_54
-      - Relay_-🇧🇭BH_07
-      - RO_104
-      - Relay_🇨🇳CN-🇭🇰HK_38
-      - Relay_🇨🇳CN-🇭🇰HK_37
-      - Relay_🇨🇳 CN-🇭🇰HK_32
-      - 中国(Youtube顺丰资源) 4 3
-      - 中国Youtube顺丰资源 9
-      - 荷兰(Youtube顺丰资源)
-      - 中国Youtube顺丰资源 12 2
-      - Relay_🇨🇳CN-🏁ZZ_59
-      - Relay_-🇹🇼TW_02
-      - CN 13 → Youtube顺丰资源
-      - 香港-Youtube顺丰资源2-3
-      - 中国(Youtube顺丰资源) 4
-      - 中国-Youtube顺丰资源2-18
-      - Relay_🇨🇳CN-🏁ZZ_52
-      - ZA_147
-      - Youtube顺丰资源_🇺🇸US-🇭🇰HK_1045
-      - CA_28
-      - Youtube顺丰资源_🇺🇸US-🇺🇸US_961
-      - Youtube顺丰资源US_943
-      - Youtube顺丰资源 - 美国  5
-      - Youtube顺丰资源_🇭🇰HK-🇭🇰HK_217
-      - 新加坡-Youtube顺丰资源2-9
-      - 英国(Youtube顺丰资源)
-      - 中国-Youtube顺丰资源-53
+      - Relay_🇨🇳CN-🇨🇳CN_62
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - Relay_🇨🇳CN-🇨🇳CN_62 2
+      - CN_76 2
+      - 台湾=tg频道:@bpjzx2=9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 美国-4.38MB/s(Youtube:不良林)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
