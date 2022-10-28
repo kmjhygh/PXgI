@@ -5,295 +5,327 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 韩国KR-T, server: kr.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: kr.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-730.7KB/s(Youtube:不良林), server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
-  - {name: 马来西亚-优化2, server: m.lwvzmdu.cn, port: 26623, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 中国_1024492, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-优化, server: yes.iamagoodman.net, port: 16617, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 中国_1024470, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 卢森堡LUX-T, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 中国_1024456, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道@kxswa) 28, server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1024528, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国_1024762, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1024069, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_1024495, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾TW-T, server: tw.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: tw.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰-优化2, server: m.lwvzmdu.cn, port: 16637, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 葡萄牙-优化, server: yes.iamagoodman.net, port: 16624, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 美国D-优化2, server: m.lwvzmdu.cn, port: 16650, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 波兰-优化2, server: m.lwvzmdu.cn, port: 16646, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 荷兰-优化3, server: t.cccao.cyou, port: 16642, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 瑞士-优化, server: yes.iamagoodman.net, port: 16633, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 香港Az-优化, server: yes.iamagoodman.net, port: 16627, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 美国Hawaii-优化, server: yes.iamagoodman.net, port: 16654, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 台湾-智能, server: g.cccao.cyou, port: 16616, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: g.cccao.cyou}, udp: true}
-  - {name: 英国-优化, server: yes.iamagoodman.net, port: 16644, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 中国_1024719, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国-优化3, server: t.cccao.cyou, port: 16644, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 中国_1024502, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿根廷AR-T, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 英国-优化2, server: m.lwvzmdu.cn, port: 16644, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 加拿大-优化2, server: m.lwvzmdu.cn, port: 16641, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 美国D-优化3, server: t.cccao.cyou, port: 16650, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 香港HGC-T, server: hgc.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: hgc.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-优化3, server: t.cccao.cyou, port: 16618, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 台湾-优化3, server: t.cccao.cyou, port: 16616, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 越南VN-T, server: vn.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: vn.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-优化, server: yes.iamagoodman.net, port: 16638, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mjp, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: 加拿大-优化, server: yes.iamagoodman.net, port: 16641, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 蒙古MN-T, server: mn.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: mn.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾-优化2, server: m.lwvzmdu.cn, port: 16616, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 芬兰-优化3, server: t.cccao.cyou, port: 16643, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 美国Hawaii-优化2, server: m.lwvzmdu.cn, port: 16654, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 美国Hawaii-优化3, server: t.cccao.cyou, port: 16654, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 荷兰-优化2, server: m.lwvzmdu.cn, port: 16642, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 加拿大-优化3, server: t.cccao.cyou, port: 16641, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 柬埔寨KH-T, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 土耳其TR-T, server: tr.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: tr.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: ID_193, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
-  - {name: 中国_1024952, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本-优化3, server: t.cccao.cyou, port: 16617, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 法国-优化, server: yes.iamagoodman.net, port: 16645, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 香港Az-优化3, server: t.cccao.cyou, port: 16627, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 荷兰-优化, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
+  - {name: www.sangee.cf_trojan, server: www.sangee.cf, port: 443, type: trojan, password: 0c89a3df02, sni: www.sangee.cf, skip-cert-verify: true, udp: true}
   - {name: 中国(TG频道@kxswa) 16, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 南非-优化, server: yes.iamagoodman.net, port: 16640, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 新加坡-优化2, server: m.lwvzmdu.cn, port: 16618, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 中国_1024527, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 印度-优化, server: yes.iamagoodman.net, port: 16626, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 墨西哥-优化2, server: m.lwvzmdu.cn, port: 16636, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: github.com/freefq - 印度尼西亚  5, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
-  - {name: 日本JP-T, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 美国LA-优化, server: yes.iamagoodman.net, port: 16648, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 马来西亚-优化3, server: t.cccao.cyou, port: 26623, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.cccao.cyou}, udp: true}
-  - {name: 波兰-优化, server: yes.iamagoodman.net, port: 16646, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yes.iamagoodman.net}, udp: true}
-  - {name: 澳大利亚-优化2, server: m.lwvzmdu.cn, port: 16638, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mjp, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
-  - {name: 瑞士-优化2, server: m.lwvzmdu.cn, port: 16633, type: vmess, uuid: 3c3628ce-36f5-4a7c-be0a-721b4c0be7ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.lwvzmdu.cn}, udp: true}
-  - {name: 印度尼西亚-329.5KB/s(Youtube:不良林), server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
-  - {name: SGP🇸🇬, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxsg.fovi.tk}, udp: true}
-  - {name: TW_421, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 香港核心接入点 01, server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.191981000.xyz, port: 9002, type: trojan, password: a35b1c20-b912-428e-a6a1-308078294ce8, sni: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.191981000.xyz, skip-cert-verify: true, udp: true}
+  - {name: 中国_1024069, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1024456, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇷BR_28, server: 116.129.254.184, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_60, server: 111.45.22.136, port: 11931, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇦UA_42, server: 116.129.254.184, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _83, server: 111.45.22.136, port: 11917, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_59, server: 111.45.22.136, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇷TR_25, server: 116.129.254.184, port: 11912, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇦UA_09, server: 111.45.22.136, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇳🇱NL_41, server: 111.45.22.136, port: 11915, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_22, server: 116.129.254.184, port: 9000, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_31, server: 111.45.22.136, port: 9043, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_34, server: 116.129.254.184, port: 9036, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🏁ZZ_80, server: 111.45.22.136, port: 11916, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_68, server: 111.45.22.136, port: 9006, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_01, server: 116.129.254.184, port: 9030, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_56, server: 116.129.254.184, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_58, server: 111.45.22.136, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🏁ZZ_86, server: 1024hk88.tfzhc.top, port: 443, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024hk88.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_17, server: 111.45.22.136, port: 9009, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_18, server: 111.45.22.136, port: 9030, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_27, server: 116.129.254.184, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_53, server: 116.129.254.184, port: 9037, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_55, server: 111.45.22.136, port: 9045, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇪🇸ES_62, server: 111.45.22.136, port: 11926, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇮🇳IN_72, server: 111.45.22.136, port: 11929, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_75, server: 111.45.22.136, port: 11905, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_02, server: 116.129.254.184, port: 9006, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_12, server: 111.45.22.136, port: 11921, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _36, server: 116.129.254.184, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_37, server: 116.129.254.184, port: 9035, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_40, server: 116.129.254.184, port: 9002, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_45, server: 116.129.254.184, port: 9031, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_48, server: 111.45.22.136, port: 9039, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇮🇱IL_50, server: 111.45.22.136, port: 11934, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_51, server: 111.45.22.136, port: 9007, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_65, server: 111.45.22.136, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_66, server: 111.45.22.136, port: 9037, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_69, server: 111.45.22.136, port: 9004, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_71, server: 111.45.22.136, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇭BH_82, server: 111.45.22.136, port: 9024, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇩🇪DE_84, server: 116.129.254.184, port: 11903, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_85, server: 111.45.22.136, port: 9003, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_1024952, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 2, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
+  - {name: Relay_-🇺🇸US_03, server: 111.45.22.136, port: 11906, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇬BG_06, server: 111.45.22.136, port: 11913, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇫🇷FR_08, server: 111.45.22.136, port: 11901, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🏁ZZ_14, server: 111.45.22.136, port: 11904, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_15, server: 116.129.254.184, port: 9017, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇭BH_26, server: 111.45.22.136, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_30, server: 111.45.22.136, port: 9038, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_32, server: 111.45.22.136, port: 9008, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_39, server: 116.129.254.184, port: 9004, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_54, server: 111.45.22.136, port: 9031, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇭BH_61, server: 111.45.22.136, port: 9027, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_74, server: 111.45.22.136, port: 9005, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_76, server: 111.45.22.136, port: 9044, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_77, server: 111.45.22.136, port: 9002, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_79, server: 111.45.22.136, port: 9040, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_81, server: 116.129.254.184, port: 11905, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇩🇪DE_05, server: 111.45.22.136, port: 11903, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_07, server: 116.129.254.184, port: 11906, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇧🇷BR_11, server: 111.45.22.136, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_13, server: 111.45.22.136, port: 11928, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🏁ZZ_19, server: 111.45.22.136, port: 11932, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_20, server: 116.129.254.184, port: 9015, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇹🇼TW_24, server: 116.129.254.184, port: 9012, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🏁ZZ_46, server: 116.129.254.184, port: 11904, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇦UA_49, server: 111.45.22.136, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_70, server: 111.45.22.136, port: 11910, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_78, server: 111.45.22.136, port: 9041, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -312,306 +344,332 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾TW-T
-      - 香港Az-优化
-      - 台湾-智能
-      - 香港HGC-T
-      - 台湾-优化3
-      - 台湾-优化2
-      - 香港Az-优化3
+      - 香港核心接入点 01
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -627,74 +685,82 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 韩国KR-T
-      - 未知国家-730.7KB/s(Youtube:不良林)
-      - 马来西亚-优化2
-      - 中国_1024492
-      - 日本-优化
-      - 中国_1024470
-      - 卢森堡LUX-T
-      - 中国_1024456
-      - 中国(TG频道@kxswa) 28
-      - 中国_1024528
       - 中国_1024762
-      - 中国_1024069
-      - 中国_1024495
-      - 台湾TW-T
-      - 乌克兰-优化2
-      - 葡萄牙-优化
-      - 美国D-优化2
-      - 波兰-优化2
-      - 荷兰-优化3
-      - 瑞士-优化
-      - 香港Az-优化
-      - 美国Hawaii-优化
-      - 台湾-智能
-      - 英国-优化
-      - 中国_1024719
-      - 英国-优化3
-      - 中国_1024502
-      - 阿根廷AR-T
-      - 英国-优化2
-      - 加拿大-优化2
-      - 美国D-优化3
-      - 香港HGC-T
-      - 新加坡-优化3
-      - 台湾-优化3
-      - 越南VN-T
-      - 澳大利亚-优化
-      - 加拿大-优化
-      - 蒙古MN-T
-      - 台湾-优化2
-      - 芬兰-优化3
-      - 美国Hawaii-优化2
-      - 美国Hawaii-优化3
-      - 荷兰-优化2
-      - 加拿大-优化3
-      - 柬埔寨KH-T
-      - 土耳其TR-T
-      - ID_193
-      - 中国_1024952
-      - 日本-优化3
-      - 法国-优化
-      - 香港Az-优化3
-      - 荷兰-优化
+      - www.sangee.cf_trojan
       - 中国(TG频道@kxswa) 16
-      - 南非-优化
-      - 新加坡-优化2
-      - 中国_1024527
-      - 印度-优化
-      - 墨西哥-优化2
-      - github.com/freefq - 印度尼西亚  5
-      - 日本JP-T
-      - 美国LA-优化
-      - 马来西亚-优化3
-      - 波兰-优化
-      - 澳大利亚-优化2
-      - 瑞士-优化2
-      - 印度尼西亚-329.5KB/s(Youtube:不良林)
-      - SGP🇸🇬
-      - TW_421
+      - 香港核心接入点 01
+      - 中国_1024069
+      - 中国_1024456
+      - Relay_-🇧🇷BR_28
+      - Relay_-🇺🇸US_60
+      - Relay_-🇺🇦UA_42
+      - _83
+      - Relay_-🇺🇸US_59
+      - Relay_-🇹🇷TR_25
+      - Relay_-🇺🇦UA_09
+      - Relay_-🇳🇱NL_41
+      - Relay_-🇺🇸US_22
+      - Relay_-🇷🇺RU_31
+      - Relay_-🇺🇸US_34
+      - Relay_-🏁ZZ_80
+      - Relay_-🇹🇼TW_68
+      - Relay_-🇺🇸US_01
+      - Relay_-🇺🇸US_56
+      - Relay_-🇺🇸US_58
+      - Relay_-🏁ZZ_86
+      - Relay_-🇺🇸US_17
+      - Relay_-🇺🇸US_18
+      - Relay_-🇺🇸US_27
+      - Relay_-🇺🇸US_53
+      - Relay_-🇷🇺RU_55
+      - Relay_-🇪🇸ES_62
+      - Relay_-🇮🇳IN_72
+      - Relay_-🇺🇸US_75
+      - Relay_-🇹🇼TW_02
+      - Relay_-🇺🇸US_12
+      - _36
+      - Relay_-🇺🇸US_37
+      - Relay_-🇹🇼TW_40
+      - Relay_-🇺🇸US_45
+      - Relay_-🇷🇺RU_48
+      - Relay_-🇮🇱IL_50
+      - Relay_-🇺🇸US_51
+      - Relay_-🇺🇸US_65
+      - Relay_-🇺🇸US_66
+      - Relay_-🇹🇼TW_69
+      - Relay_-🇨🇦CA_71
+      - Relay_-🇧🇭BH_82
+      - Relay_-🇩🇪DE_84
+      - Relay_-🇹🇼TW_85
+      - 中国_1024952
+      - github.com/freefq - 美国CloudFlare节点 2
+      - Relay_-🇺🇸US_03
+      - Relay_-🇧🇬BG_06
+      - Relay_-🇫🇷FR_08
+      - Relay_-🏁ZZ_14
+      - Relay_-🇹🇼TW_15
+      - Relay_-🇧🇭BH_26
+      - Relay_-🇷🇺RU_30
+      - Relay_-🇺🇸US_32
+      - Relay_-🇹🇼TW_39
+      - Relay_-🇺🇸US_54
+      - Relay_-🇧🇭BH_61
+      - Relay_-🇹🇼TW_74
+      - Relay_-🇷🇺RU_76
+      - Relay_-🇹🇼TW_77
+      - Relay_-🇷🇺RU_79
+      - Relay_-🇺🇸US_81
+      - Relay_-🇩🇪DE_05
+      - Relay_-🇺🇸US_07
+      - Relay_-🇧🇷BR_11
+      - Relay_-🇺🇸US_13
+      - Relay_-🏁ZZ_19
+      - Relay_-🇹🇼TW_20
+      - Relay_-🇹🇼TW_24
+      - Relay_-🏁ZZ_46
+      - Relay_-🇺🇦UA_49
+      - Relay_-🇺🇸US_70
+      - Relay_-🇷🇺RU_78
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
